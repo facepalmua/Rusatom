@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header id="header" class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a href="index.html"><img src="src/logo.svg" alt="Лого"/></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu__icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown menu__item">
+                                <a class="nav-link menu__link" href="about.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    О компании
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <a class="dropdown-item" href="about.html#company-history">История деятельности</a>
+                                    <a class="dropdown-item" href="about.html#company-activity">Деятельность</a>
+                                    <a class="dropdown-item" href="about.html#company-partners-in">Отраслевые партнеры</a>
+                                    <a class="dropdown-item" href="about.html#company-partners-out">Внешние партнеры</a>
+                                    <a class="dropdown-item" href="about.html#company-leadership">Руководство</a>
+                                    <a class="dropdown-item" href="about.html">Наши проекты</a>
+                                </div>
+                            </li>
+                            <li class="nav-item menu__item">
+                                <a class="nav-link menu__link" href="printers.html">Продукция</a>
+                            </li>
+                            <li class="nav-item menu__item">
+                                <a class="nav-link menu__link" href="#">Услуги</a>
+                            </li>
+                            <li class="nav-item menu__item">
+                                <a class="nav-link menu__link" href="calculator.html">Расчет стоимости</a>
+                            </li>
+                            <li class="nav-item menu__item">
+                                <a class="nav-link menu__link" href="#">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item menu__item">
+                                <a class="nav-link menu__link" href="#">Пресс-центр</a>
+                            </li>
+                            <li class="nav-item menu__item">
+                                <a class="nav-link menu__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="menu__lang">
+                            <a class="menu__lang-link" href="#">RU</a>/
+                            <a class="menu__lang-link" href="#">EN</a>
+                        </div>
+                        <form class="form-inline menu__search">
+                            <input class="menu__search-input" type="search" aria-label="Search" />
+                            <button class="menu__search-btn" type="submit"></button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="calculator" class="calculator">
+            <div class="container">
+                <h1 class="calculator__title">Расчет стоимости изготовления детали</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="calculator-block">
+                            <p class="calculator-block-title calculator-block-title-mt">Загрузите STL-модель детали</p>
+                            <a href="#" class="calculator__button">Загрузить модель</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calculator-block">
+                            <p class="calculator-block-title calculator-block-title-mt">Или введите параметры детали вручную</p>
+                            <input class="calculator__detail" type="number" name="calculator-detail" id="calculator-detail" placeholder="объем детали" />
+                            <input class="calculator__detail" type="number" name="calculator-height" id="calculator-height" placeholder="высота детали" />
+                        </div>
+                    </div>
+                </div>
+                <h2 class="calculator__second-title">Выберите материал и дополнительные услуги</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="calculator__simple-block">
+                            <p class="calculator-block-title">Выберите материал из списка</p>
+                            <select class="calculator__select" name="calculator-material" id="calculator-material">
+                                <option value="150">Сталь 316L</option>
+                                <option value="250">Алюминий AlSi10Mg</option>
+                                <option value="350">Титан Ti64</option>
+                                <option value="450">Inconel 718</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calculator__simple-block">
+                            <p class="calculator-block-title">Выберите дополнительные услуги</p>
+                            <fieldset class="calculator__check-list">
+                                <label class="calculator__check"
+                                    >Удаление поддержек
+                                    <input type="checkbox" name="removingSupports" id="removingSupports" />
+                                    <span class="calculator__checkmark"></span>
+                                </label>
+                                <label class="calculator__check"
+                                    >Термообработка
+                                    <input type="checkbox" name="heatTreatment" id="heatTreatment" />
+                                    <span class="calculator__checkmark"></span>
+                                </label>
+                                <label class="calculator__check"
+                                    >Пескоструйная обработка
+                                    <input type="checkbox" name="sandblasting" id="sandblasting" />
+                                    <span class="calculator__checkmark"></span>
+                                </label>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <button class="calculator__button calculator__button-mt" onclick="calc()">Расчитать стоимость</button>
+                <table id="calculator-table" class="calculator-result">
+                    <tr>
+                        <th></th>
+                        <th>Традиционные<br />технологии</th>
+                        <th>Аддитивные<br />технологии</th>
+                        <th>Эффект</th>
+                    </tr>
+                    <tr>
+                        <td>Стоимость изготовления, руб.</td>
+                        <td><input class="calculator__table-detail" type="text"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Срок изготовления, час.</td>
+                        <td><input class="calculator__table-detail" type="text"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p class="calculator__warning">Рассчитанная стоимость является приблизительной и не является публичной офертой. Для получения расчета окончательной стоимости изделия, пожалуйста, обратитесь к нашим специалистам или оставьте заявку на 3D-печать на нашем сайте с указанием Ваших контактных данных.</p>
+                <button class="calculator__button calculator__button-mt calculator__button-request">Отправить заявку</button>
+            </div>
+        </section>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 footer__group">
+                        <h6 class="footer__title">О компании</h6>
+                        <a class="footer__link" href="#">История деятельности</a>
+                        <a class="footer__link" href="#">Деятельность</a>
+                        <a class="footer__link" href="#">Наши достижения</a>
+                        <a class="footer__link" href="#">Стратегические цели</a>
+                        <a class="footer__link" href="#">Структура дивизиона</a>
+                        <a class="footer__link" href="#">Руководство</a>
+                    </div>
+                    <div class="col-md-2 footer__group">
+                        <h6 class="footer__title">Услуги</h6>
+                        <a class="footer__link" href="#">Проектирование</a>
+                        <a class="footer__link" href="#">Аддитивное производство</a>
+                        <a class="footer__link" href="#">Прототипирование</a>
+                        <a class="footer__link" href="#">Контроль качества</a>
+                        <a class="footer__link" href="#">Термообработка</a>
+                        <a class="footer__link" href="#">Механообработка</a>
+                        <a class="footer__link" href="#">Инжиниринг</a>
+                        <a class="footer__link" href="#">Обучение</a>
+                        <a class="footer__link" href="#">Портфолио наших работ</a>
+                    </div>
+                    <div class="col-md-2 footer__group">
+                        <h6 class="footer__title">Продукция</h6>
+                        <a class="footer__link" href="#">3D-принтеры</a>
+                        <a class="footer__link" href="#">3D-сканеры</a>
+                        <a class="footer__link" href="#">Материалы</a>
+                        <a class="footer__link" href="#">Комплектующие</a>
+                        <a class="footer__link" href="#">Сопутствующее оборудование</a>
+                    </div>
+                    <div class="col-md-2 footer__group">
+                        <h6 class="footer__title">Пресс-центр</h6>
+                        <a class="footer__link" href="#">Пресса о нас</a>
+                        <a class="footer__link" href="#">Мероприятия</a>
+                        <a class="footer__link" href="#">Фото и видео</a>
+                        <h6 class="footer__title">Сотрудничество</h6>
+                        <h6 class="footer__title">Контакты</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="footer__title">
+                            ООО «Русатом - Аддитивные Технологии» - единый отраслевой интегратор Госкорпорации «Росатом» по направлению «Аддитивные технологии»
+                        </p>
+                        <div class="footer__social">
+                            <img src="src/facebook.svg" alt="Facebook" />
+                            <img src="src/instagram.svg" alt="Instagram" />
+                            <img src="src/youtube.svg" alt="Youtube" />
+                        </div>
+                        <h6 class="footer__title">ИНН:7724424381</h6>
+                        <h6 class="footer__title">ОГРН: 5177746230547</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+# Documentation: http://orlov.io/ru/articles/podrobnee-o-faile-gitignore
+
+/node_modules/*
+/dist/*
+/.git/*
+/.idea
+
+/gulpfile.js
+
+.DS_store
+*.log
+*.zip
+
+/app/oldtemplate/*
+/app/sass/*
+/app/scss/*
+
+/public_html
