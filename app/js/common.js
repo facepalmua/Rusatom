@@ -20,6 +20,11 @@ wow.init();
 $(document).ready(function() {
     console.log( "ready!" );
 
+    $("#select-file").change(function() {
+        filename = this.files[0].name;
+        $('.label-for-file').html('Выбраный файл:' + filename)
+    });
+
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
         type: 'iframe',
