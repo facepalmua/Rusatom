@@ -32,45 +32,61 @@
 
 <body>
 <header id="header" class="header">
-    <div class="container-fluid">
+    <div class="container">
         <nav class="navbar navbar-expand-lg">
             <a href="index.html"><img src="img/logo-header.svg" alt="Лого"/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler btn-show-menu" >
                 <span class="menu__icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ml-auto">
                     <li class="nav-item dropdown menu__item">
-                        <a class="nav-link menu__link" href="about.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link menu__link" href="about.html" >
                             О компании
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" href="about.html#company-history">История деятельности</a>
-                            <a class="dropdown-item" href="about.html#company-activity">Деятельность</a>
-                            <a class="dropdown-item" href="about.html#company-partners-in">Отраслевые партнеры</a>
-                            <a class="dropdown-item" href="about.html#company-partners-out">Внешние партнеры</a>
-                            <a class="dropdown-item" href="about.html#company-leadership">Руководство</a>
-                            <a class="dropdown-item" href="about.html">Наши проекты</a>
-                        </div>
+                        <ul class="dropdown-menu" >
+                            <li><a class="dropdown-item" href="about.html#company-activity">Деятельность</a></li>
+                            <li><a class="dropdown-item" href="about.html#company-partners-in">Отраслевые партнеры</a></li>
+                            <li><a class="dropdown-item" href="about.html#company-partners-out">Внешние партнеры</a></li>
+                            <li><a class="dropdown-item" href="about.html#company-leadership">Руководство</a></li>
+                            <li><a class="dropdown-item" href="about.html">Наши проекты</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown menu__item">
+                        <a class="nav-link menu__link" href="#" >Услуги</a>
+                        <ul class="dropdown-menu" >
+                            <li><a href="services.html" class="dropdown-item">3D-печать</a></li>
+                            <li><a href="#" class="dropdown-item">Оптимизация деталей</a></li>
+                            <li><a href="services.html" class="dropdown-item">3D-сканирование</a></li>
+                            <li><a href="services.html" class="dropdown-item">Тренинги</a></li>
+                            <li><a href="services.html" class="dropdown-item">Реверс - инжиниринг</a></li>
+                            <li><a href="services.html" class="dropdown-item">Аудит предприятий <br> на предмет аддитивных технологий</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown menu__item">
+                        <a class="nav-link menu__link" href="#">Продукция</a>
+                        <ul class="dropdown-menu" >
+                            <li><a href="printers.html" class="dropdown-item">3D-принтеры</a></li>
+                            <li><a href="materials.html" class="dropdown-item">Материалы</a></li>
+                            <li><a href="calculator.html" class="dropdown-item">Расчет стоимости</a></li>
+                            <li><a href="related_equipment.html" class="dropdown-item">Сопутствующее оборудование</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown menu__item">
+                        <a class="nav-link menu__link" href="#" >Пресс-центр</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="news.html" class="dropdown-item">Новости</a></li>
+                            <li><a href="gallery.html" class="dropdown-item">Фотогалерея</a></li>
+                            <li><a href="videogallery.html" class="dropdown-item">Видеогалерея</a></li>
+                            <li><a href="guidline.html" class="dropdown-item">Фирменный стиль</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item menu__item">
-                        <a class="nav-link menu__link" href="printers.html">Продукция</a>
+                        <a class="nav-link menu__link" href="articles.html">Полезные статьи</a>
                     </li>
                     <li class="nav-item menu__item">
-                        <a class="nav-link menu__link" href="#">Услуги</a>
-                    </li>
-                    <li class="nav-item menu__item">
-                        <a class="nav-link menu__link" href="calculator.html">Расчет стоимости</a>
-                    </li>
-                    <li class="nav-item menu__item">
-                        <a class="nav-link menu__link" href="#">Полезные статьи</a>
-                    </li>
-                    <li class="nav-item menu__item">
-                        <a class="nav-link menu__link" href="#">Пресс-центр</a>
-                    </li>
-                    <li class="nav-item menu__item">
-                        <a class="nav-link menu__link" href="#">Контакты</a>
+                        <a class="nav-link menu__link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
                 <div class="menu__lang">
@@ -81,7 +97,7 @@
                     <input class="menu__search-input" type="search" aria-label="Search" />
                     <button class="menu__search-btn" type="submit"></button>
                 </form>
-            </div>
+
         </nav>
     </div>
 </header>

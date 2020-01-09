@@ -19,6 +19,10 @@ wow.init();
 
 $(document).ready(function() {
     console.log( "ready!" );
+
+    $('.navbar-toggler').click(function () {
+        $('.navbar-nav').toggleClass('navbar-nav-show')
+    });
     
     // $('.specification__title-btn').click(function () {
     //     if ($(this).hasClass('collapsed')) {
@@ -84,13 +88,8 @@ $(document).ready(function() {
 
     });
 
-    $('.dropdown').click(function () {
-       $('.dropdown-menu').show()
-    });
 
-    $('.navbar-toggler').click(function () {
-       $('.collapse').toggleClass('show-menu-class');
-    });
+
     $('.mp-slider').slick({
         dots: false,
         infinite: true,
