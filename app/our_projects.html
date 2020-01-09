@@ -99,7 +99,7 @@
                     <div class="printers-after-header__item-container">
                         <div class="printers-after-header__section__item__inner">
                             <p class="printers-after-header__section__item__inner_title">Дорожная карта развития Аддитивных технологий в Российской Федерации</p>
-                            <a href="#" class="main-button white">перейти</a>
+                            <a href="#" class="main-button white h51">перейти</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                         <div class="printers-after-header__section__item__inner">
                             <p class="printers-after-header__section__item__inner_title">Виртуальный <br>
                                 3D - принтер</p>
-                            <a href="#" class="main-button white">перейти</a>
+                            <a href="#" class="main-button white h51">перейти</a>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                         <div class="printers-after-header__section__item__inner">
                             <p class="printers-after-header__section__item__inner_title">Карточка, что бы продемонстрировать
                                 отступ между блоками</p>
-                            <a href="#" class="main-button white">перейти</a>
+                            <a href="#" class="main-button white h51">перейти</a>
                         </div>
                     </div>
                 </div>
@@ -183,6 +183,22 @@
         </div>
     </div>
 </footer>
+
+<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+    <form action="" class="popup-form">
+        <p class="popup-form-title">
+            Направьте Ваш запрос
+        </p>
+        <input type="text" placeholder="ФИО*" name="name">
+        <input type="text" placeholder="E-mail" name="email">
+        <input type="number" placeholder="Телефон" name="phone">
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        <label for="select-file" class="label-for-file">прикрепить файл</label>
+        <input type="file" name="file" id="select-file">
+        <button class="main-button blue-article change-width-button">Отправить запрос</button>
+    </form>
+</div>
 
 
 <script src="js/scripts.min.js"></script>

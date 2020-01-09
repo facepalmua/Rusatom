@@ -186,6 +186,22 @@
     </div>
 </footer>
 
+<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+    <form action="" class="popup-form">
+        <p class="popup-form-title">
+            Направьте Ваш запрос
+        </p>
+        <input type="text" placeholder="ФИО*" name="name">
+        <input type="text" placeholder="E-mail" name="email">
+        <input type="number" placeholder="Телефон" name="phone">
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        <label for="select-file" class="label-for-file">прикрепить файл</label>
+        <input type="file" name="file" id="select-file">
+        <button class="main-button blue-article change-width-button">Отправить запрос</button>
+    </form>
+</div>
+
 
 <script src="js/scripts.min.js"></script>
 

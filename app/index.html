@@ -32,7 +32,7 @@
 
 <body>
 <header id="header" class="header">
-    <div class="container-fluid">
+    <div class="container">
         <nav class="navbar navbar-expand-lg">
             <a href="index.html"><img src="img/logo-header.svg" alt="Лого"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,6 +108,8 @@
         <a href="#scrool-to-this-block"><img src="img/main-page_arrow-down.svg" alt="" class="i-re"></a>
     </div>
 </section>
+
+
 
 <section class="section-white-bg" id="scrool-to-this-block">
     <div class="container">
@@ -316,7 +318,7 @@
                 <div class="mp__product-item-container" style="background-image: url('img/main-page_img-printer.png')">
                     <div class="overlay"></div>
                     <p class="product-item__name">3D-принтеры</p>
-                    <a href="#" class="main-button white">Перейти</a>
+                    <a href="#" class="main-button white h51">Перейти</a>
                 </div>
             </div>
             <div class="col-md-4 wow fadeInUp animated" data-wow-delay=".3s">
@@ -324,14 +326,14 @@
                     <div class="overlay overlay-fiolet"></div>
                     <p class="product-item__name">Материалы для  <br>
                         3D-печати</p>
-                    <a href="#" class="main-button white">Перейти</a>
+                    <a href="#" class="main-button white h51">Перейти</a>
                 </div>
             </div>
             <div class="col-md-4 wow fadeInUp animated" data-wow-delay=".6s">
                 <div class="mp__product-item-container" style="background-image: url('img/product-img-3.png')">
                     <div class="overlay overlay-aqua_green"></div>
                     <p class="product-item__name">Сопутствующее <br> оборудование</p>
-                    <a href="#" class="main-button white">Перейти</a>
+                    <a href="#" class="main-button white h51">Перейти</a>
                 </div>
             </div>
         </div>
@@ -347,7 +349,7 @@
                     <div class="overlay overlay-gray"></div>
                     <p class="product-item__name">3D-печать</p>
                     <p class="product-item__descr">Мы предлагаем услуги 3D-печати высшего качества по всем современным стандартам и технологиям.</p>
-                    <a href="#" class="main-button white">Подробнее</a>
+                    <a href="#" class="main-button white h51">Подробнее</a>
                 </div>
             </div>
             <div class="col-md-3 wow fadeInUp animated" data-wow-delay=".3s">
@@ -355,7 +357,7 @@
                     <div class="overlay overlay-coral"></div>
                     <p class="product-item__name">Оптимизация  деталей</p>
                     <p class="product-item__descr">Наши инженеры занимаются оптимизацией топологии деталей, которая заключается в снижении массы при обеспечении необходимого запаса прочности.</p>
-                    <a href="#" class="main-button white">Подробнее</a>
+                    <a href="#" class="main-button white h51">Подробнее</a>
                 </div>
             </div>
             <div class="col-md-6 wow fadeInUp animated" data-wow-delay=".6s">
@@ -363,7 +365,7 @@
                     <div class="overlay overlay-blue"></div>
                     <p class="product-item__name product-item__name--big">Аудит предприятий на предмет аддитивных технологий</p>
                     <p class="product-item__descr">Специалисты ООО «РусАТ» проведут комплексный анализ Вашего предприятия и проконсультируют по внедрению аддитивных технологий в технологический процесс производства.</p>
-                    <a href="#" class="main-button white">Подробнее</a>
+                    <a href="#" class="main-button white h51">Подробнее</a>
                 </div>
             </div>
             <div class="col-md-6 wow fadeInUp animated">
@@ -371,7 +373,7 @@
                     <div class="overlay overlay-strawberry"></div>
                     <p class="product-item__name product-item__name--big">3D-сканирование</p>
                     <p class="product-item__descr">Комплексные услуги профессионального 3D-сканирования и гарантия отличного результата.</p>
-                    <a href="#" class="main-button white">Подробнее</a>
+                    <a href="#" class="main-button white h51">Подробнее</a>
                 </div>
             </div>
             <div class="col-md-3 wow fadeInUp animated" data-wow-delay=".3s">
@@ -379,7 +381,7 @@
                     <div class="overlay overlay-gray"></div>
                     <p class="product-item__name">Тренинги</p>
                     <p class="product-item__descr">Наши курсы созданы для тех, кто собирается познать сферу аддитивного производства или усовершенствовать свои технические навыки.</p>
-                    <a href="#" class="main-button white">Подробнее</a>
+                    <a href="#" class="main-button white h51">Подробнее</a>
                 </div>
             </div>
             <div class="col-md-3 wow fadeInUp animated" data-wow-delay=".6s">
@@ -387,7 +389,7 @@
                     <div class="overlay overlay-coral"></div>
                     <p class="product-item__name">Реверс - инжиниринг</p>
                     <p class="product-item__descr">Вам требуется запасная часть, которая снята с производства или которую невозможно доставить в кратчайшие сроки? </p>
-                    <a href="#" class="main-button white">Подробнее</a>
+                    <a href="#" class="main-button white h51">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -448,6 +450,21 @@
     </div>
 </footer>
 
+<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+    <form action="" class="popup-form">
+        <p class="popup-form-title">
+            Направьте Ваш запрос
+        </p>
+        <input type="text" placeholder="ФИО*" name="name">
+        <input type="text" placeholder="E-mail" name="email">
+        <input type="number" placeholder="Телефон" name="phone">
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        <label for="select-file" class="label-for-file">прикрепить файл</label>
+        <input type="file" name="file" id="select-file">
+        <button class="main-button blue-article change-width-button">Отправить запрос</button>
+    </form>
+</div>
 
 
 <script src="js/scripts.min.js"></script>

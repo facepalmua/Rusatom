@@ -89,25 +89,26 @@
     </div>
 </header>
 
-<div class="guidline-title__container">
-    <h2 class="site-h2__section-divider">Фирменный стиль</h2>
-</div>
 
-<div class="guidline__btn-container">
-    <div class="container">
-        <a href="#" class="main-button blue-article">Скачать логотипы</a>
-        <a href="#" class="main-button blue-article">Скачать брендбук</a>
-    </div>
-</div>
 
 <div class="footer-wave">
+    <div class="guidline-title__container">
+        <h2 class="site-h2__section-divider">Фирменный стиль</h2>
+    </div>
+
+    <div class="guidline__btn-container">
+        <div class="container">
+            <a href="#" class="main-button blue-article">Скачать логотипы</a>
+            <a href="#" class="main-button blue-article">Скачать брендбук</a>
+        </div>
+    </div>
     <div class="container">
-        <h2 class="site-h2__section-divider">Примеры использования <br>
+        <h2 class="site-h2__section-divider mp-mb20">Примеры использования <br>
             фирменного стиля</h2>
         <div class="row flex-centered zoom-gallery gallery">
-            <div class="col-lg-4 col-md-6 col-sm-12"><a href="img/videogallery_placeholder.jpg"><img src=img/videogallery_placeholder.jpg
+            <div class="col-lg-6 col-md-6 col-sm-12"><a href="img/videogallery_placeholder.jpg"><img src=img/videogallery_placeholder.jpg
                                                                                           alt=""></a></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"><a href="img/videogallery_placeholder.jpg"><img src=img/videogallery_placeholder.jpg
+            <div class="col-lg-6 col-md-6 col-sm-12"><a href="img/videogallery_placeholder.jpg"><img src=img/videogallery_placeholder.jpg
                                                                                           alt=""></a></div>
         </div>
     </div>
@@ -170,6 +171,22 @@
         </div>
     </div>
 </footer>
+
+<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+    <form action="" class="popup-form">
+        <p class="popup-form-title">
+            Направьте Ваш запрос
+        </p>
+        <input type="text" placeholder="ФИО*" name="name">
+        <input type="text" placeholder="E-mail" name="email">
+        <input type="number" placeholder="Телефон" name="phone">
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        <label for="select-file" class="label-for-file">прикрепить файл</label>
+        <input type="file" name="file" id="select-file">
+        <button class="main-button blue-article change-width-button">Отправить запрос</button>
+    </form>
+</div>
 
 
 <script src="js/scripts.min.js"></script>
